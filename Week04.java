@@ -102,6 +102,13 @@ public class Week04 {
         double[] arrayA = {10.0, 20.0, 30.0};
         double[] arrayB = {5.0, 5.0, 5.0};
         System.out.println("11) isFirstArrayAverageGreater: " + isFirstArrayAverageGreater(arrayA, arrayB));
+        // -----------------------------
+        // 12) Test willBuyDrink method
+        // -----------------------------
+        boolean hotToday = true;
+        double cash = 12.00;
+        System.out.println("12) willBuyDrink: " + willBuyDrink(hotToday, cash));
+
 
      
 
@@ -157,6 +164,11 @@ public class Week04 {
         double avg2 = sum2 / arr2.length;
 
         return avg1 > avg2;
+    }
+    
+    // 12) willBuyDrink method
+    public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
+        return isHotOutside && moneyInPocket > 10.50;
     }
 
 
