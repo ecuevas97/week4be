@@ -2,7 +2,7 @@ package week04;
 
 // Week 4 Project - Arrays, Loops, and Methods
 // Author: Elena Cuevas
-// Notes: This file solves all numbered tasks (1–13) from the assignment.
+// Notes: Solves all numbered tasks (1–13) from the assignment.
 
 public class Week04 {
 
@@ -52,13 +52,13 @@ public class Week04 {
             }
         }
         System.out.println("2b) All names: " + allNames);
-       
+
         // -----------------------------
-        // 3) & 4) Accessing array elements (printed as info lines)
+        // 3) & 4) Accessing array elements
         // -----------------------------
         System.out.println("3) Last element of any array: array[array.length - 1]");
         System.out.println("4) First element of any array: array[0]");
-        
+
         // -----------------------------
         // 5) nameLengths array
         // -----------------------------
@@ -76,5 +76,21 @@ public class Week04 {
         }
         System.out.println("6) Sum of all name lengths: " + sumNameLengths);
 
+        // -----------------------------
+        // 7) Test repeatWord method
+        // -----------------------------
+        System.out.println("7) repeatWord: " + repeatWord("Hello", 3));
+
     } // end of main
+
+
+    // 7) repeatWord method
+    public static String repeatWord(String word, int n) {
+        String result = "";
+        for (int i = 0; i < n; i++) {
+            result += word;
+        }
+        return result;
+    }
+
 } // end of class
