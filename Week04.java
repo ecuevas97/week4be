@@ -96,6 +96,13 @@ public class Week04 {
         // -----------------------------
         double[] numbers = {5.0, 10.0, 15.0, 20.0};
         System.out.println("10) averageArray: " + averageArray(numbers));
+        // -----------------------------
+        // 11) Test isFirstArrayAverageGreater method
+        // -----------------------------
+        double[] arrayA = {10.0, 20.0, 30.0};
+        double[] arrayB = {5.0, 5.0, 5.0};
+        System.out.println("11) isFirstArrayAverageGreater: " + isFirstArrayAverageGreater(arrayA, arrayB));
+
      
 
         
@@ -132,6 +139,24 @@ public class Week04 {
             sum += n;
         }
         return sum / arr.length;
+    }
+    
+    // 11) isFirstArrayAverageGreater method
+    public static boolean isFirstArrayAverageGreater(double[] arr1, double[] arr2) {
+        double sum1 = 0;
+        double sum2 = 0;
+
+        for (double n : arr1) {
+            sum1 += n;
+        }
+        for (double n : arr2) {
+            sum2 += n;
+        }
+
+        double avg1 = sum1 / arr1.length;
+        double avg2 = sum2 / arr2.length;
+
+        return avg1 > avg2;
     }
 
 
