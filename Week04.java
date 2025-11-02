@@ -58,6 +58,23 @@ public class Week04 {
         // -----------------------------
         System.out.println("3) Last element of any array: array[array.length - 1]");
         System.out.println("4) First element of any array: array[0]");
+        
+        // -----------------------------
+        // 5) nameLengths array
+        // -----------------------------
+        int[] nameLengths = new int[names.length];
+        for (int i = 0; i < names.length; i++) {
+            nameLengths[i] = names[i].length();
+        }
+
+        // -----------------------------
+        // 6) Sum of nameLengths
+        // -----------------------------
+        int sumNameLengths = 0;
+        for (int len : nameLengths) {
+            sumNameLengths += len;
+        }
+        System.out.println("6) Sum of all name lengths: " + sumNameLengths);
 
     } // end of main
 } // end of class
