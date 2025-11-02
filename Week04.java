@@ -109,6 +109,13 @@ public class Week04 {
         double cash = 12.00;
         System.out.println("12) willBuyDrink: " + willBuyDrink(hotToday, cash));
 
+        // -----------------------------
+        // 13) Test shouldTakeNap method
+        // -----------------------------
+        int hoursSlept = 5;
+        boolean hadCoffee = false;
+        System.out.println("13) shouldTakeNap: " + shouldTakeNap(hoursSlept, hadCoffee));
+
 
      
 
@@ -170,6 +177,14 @@ public class Week04 {
     public static boolean willBuyDrink(boolean isHotOutside, double moneyInPocket) {
         return isHotOutside && moneyInPocket > 10.50;
     }
+ 
+    // 13) shouldTakeNap method
+    // This method checks if you should take a nap based on sleep hours and coffee intake.
+    // I created it because I’m always balancing art, coding, and pet sitting — 
+    // so it’s a fun, personal example of decision-making with conditionals!
+    public static boolean shouldTakeNap(int hoursSlept, boolean hadCoffee) {
+     return hoursSlept < 6 && !hadCoffee;
+ }
 
 
 } // end of class
