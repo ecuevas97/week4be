@@ -91,6 +91,12 @@ public class Week04 {
         // -----------------------------
         int[] nums = {20, 30, 10, 45}; // sum = 105
         System.out.println("9) isSumGreaterThan100: " + isSumGreaterThan100(nums));
+        // -----------------------------
+        // 10) Test averageArray method
+        // -----------------------------
+        double[] numbers = {5.0, 10.0, 15.0, 20.0};
+        System.out.println("10) averageArray: " + averageArray(numbers));
+     
 
         
     } // end of main
@@ -117,6 +123,15 @@ public class Week04 {
             sum += n;
         }
         return sum > 100;
+    }
+ 
+    // 10) averageArray method
+    public static double averageArray(double[] arr) {
+        double sum = 0;
+        for (double n : arr) {
+            sum += n;
+        }
+        return sum / arr.length;
     }
 
 
