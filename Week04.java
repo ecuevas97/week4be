@@ -52,5 +52,12 @@ public class Week04 {
             }
         }
         System.out.println("2b) All names: " + allNames);
+       
+        // -----------------------------
+        // 3) & 4) Accessing array elements (printed as info lines)
+        // -----------------------------
+        System.out.println("3) Last element of any array: array[array.length - 1]");
+        System.out.println("4) First element of any array: array[0]");
+
     } // end of main
 } // end of class
