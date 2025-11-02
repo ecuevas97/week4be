@@ -2,7 +2,7 @@ package week04;
 
 // Week 4 Project - Arrays, Loops, and Methods
 // Author: Elena Cuevas
-// Notes: Solves all numbered tasks (1–13) from the assignment.
+// Notes: Solves numbered tasks (1–8) from the assignment.
 
 public class Week04 {
 
@@ -81,6 +81,11 @@ public class Week04 {
         // -----------------------------
         System.out.println("7) repeatWord: " + repeatWord("Hello", 3));
 
+        // -----------------------------
+        // 8) Test getFullName method
+        // -----------------------------
+        System.out.println("8) getFullName: " + getFullName("Elena", "Cuevas"));
+
     } // end of main
 
 
@@ -91,6 +96,11 @@ public class Week04 {
             result += word;
         }
         return result;
+    }
+
+    // 8) getFullName method
+    public static String getFullName(String firstName, String lastName) {
+        return firstName + " " + lastName;
     }
 
 } // end of class
