@@ -85,7 +85,14 @@ public class Week04 {
         // 8) Test getFullName method
         // -----------------------------
         System.out.println("8) getFullName: " + getFullName("Elena", "Cuevas"));
+   
+        // -----------------------------
+        // 9) Test isSumGreaterThan100
+        // -----------------------------
+        int[] nums = {20, 30, 10, 45}; // sum = 105
+        System.out.println("9) isSumGreaterThan100: " + isSumGreaterThan100(nums));
 
+        
     } // end of main
 
 
@@ -102,5 +109,15 @@ public class Week04 {
     public static String getFullName(String firstName, String lastName) {
         return firstName + " " + lastName;
     }
+    
+    // 9) isSumGreaterThan100 method
+    public static boolean isSumGreaterThan100(int[] arr) {
+        int sum = 0;
+        for (int n : arr) {
+            sum += n;
+        }
+        return sum > 100;
+    }
+
 
 } // end of class
